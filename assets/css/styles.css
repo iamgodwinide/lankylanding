@@ -1,0 +1,261 @@
+body{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+nav {
+    position: absolute;
+    top: 2em;
+    left: 0;
+    width: 100%;
+}
+nav img{
+    width: 400px;
+    height: 50px;
+    object-fit: cover;
+    color: #fff;
+}
+main{
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 8%, rgba(39,14,50,1) 57%, rgba(97,28,88,1) 100%);
+    height: 100vh;
+    padding: 2em;
+    padding-top: 10em;
+    display: flex;
+}
+main .showcase{
+    width: 50%;
+}
+main h1,main p{
+    color: #fff;
+}
+h1,h2{
+    font-size: 3em;
+}
+main h1 .bitcoin{
+    color: #FAA819;
+}
+main h1 .crypto {
+    color: rgb(195, 18, 171);
+}
+main a.call{
+    text-decoration: none;
+    color: #000;
+    background-color: #FAA819;
+    padding: .5em 1em;
+    border-radius: 10px;
+    margin: 1em auto;
+    display: inline-block;
+}
+.flex-container{
+    display: flex;
+    padding: 1em;
+    margin-bottom: 2em;
+}
+.flex-container img{
+    width: 40%;
+    border-radius: 20px;
+}
+.flex-container .content{
+    padding: 1em;
+}
+.flex-container .content p.num{
+    color: #FAA819;
+    font-size: 1.4em;
+    font-weight: bold;
+}
+.flex-container .content p{
+    line-height: 1.6em;
+    font-weight: 300;
+}
+.flex-container .content h2 span{
+    color: #FAA819;
+}
+.reviews{
+    background-color: #000000;
+    padding: 1em;
+}
+.reviews h3{
+    color: #ca1616;
+    text-align: center;
+    font-size: 1.5em;
+}
+.reviews h2{
+    color: #fff;
+    text-align: center;
+    max-width: 800px;
+    margin: auto;
+}
+.reviews-items{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3em;
+}
+.reviews-items .item {
+    display: flex;
+    color: #fff;
+    width: 45%;
+}
+.reviews-items .item img{
+    width: 80px;
+    height: 100px;
+    border-radius: 10px;
+}
+.reviews-items .item .content{
+    padding: 0 2em;
+}
+.reviews-items h4{
+    margin: 0;
+}
+.reviews-items p, 
+.reviews-items i{
+    font-weight: 300;
+    line-height: 1.5em;
+}
+
+.stats{
+    background-color: #161616;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 4em 8em;
+}
+.stats .item{
+    text-align: center;
+}
+.stats h2{
+    margin: 0;
+    font-size: 5em;
+}
+.stats p{
+    font-weight: 400;
+    font-size: 1.2em;
+    margin: 0;
+}
+
+.about{
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 8%, rgba(39,14,50,1) 57%, rgba(97,28,88,1) 100%); 
+    padding: 2em 0;
+}
+
+.about h2{
+    color: #fff;
+    text-align: center;
+}
+
+.about .content{
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    padding: 2em;
+}
+.about .content p{
+    width: 45%;
+    padding: 1em;
+    line-height: 2em;
+}
+.about .content img{
+    width: 40%;
+}
+.about h2{
+    margin: 0;
+}
+.about h2 span:nth-child(1){
+    color: #fae019;
+}
+.about h2 span:nth-child(2){
+    color: #26ff00;
+}
+
+footer{
+    background-color: #161616;
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+}
+
+footer p{
+    margin: 0;
+}
+
+@media screen and (max-width: 1024px) {
+    h1,h2{
+        font-size: 1.8em;
+    }
+    main{
+        flex-direction: column;
+        height: 100%;
+    }
+    h1,h2{
+        font-size: 1.8em;
+    }
+    main .showcase{
+        width: 100%;
+    }
+    main img {
+        width: 50vw;
+        margin: 0 auto;
+    }
+
+    .flex-container{
+        flex-direction: column;
+    }
+    .flex-container img{
+        width: 100%;
+        margin: 0 auto;
+    }
+    .flex-container p,
+    .flex-container h2{
+        margin: 0;
+    }
+    .flex-container h2{
+        margin: .5em 0;
+    }
+    .flex2{
+        flex-direction: column-reverse;
+    }
+    .reviews-items{
+        flex-direction: column;
+    }
+    .reviews-items .item{
+        width: 100%;
+        margin-bottom: 3em;
+        flex-direction: column;
+    }
+    
+    .reviews-items .item .content{
+        padding: 0;
+    }
+    .reviews-items .item img{
+        margin-bottom: 1em;
+    }
+    .reviews h2{
+        max-width: 1000px;
+    }
+    .stats{
+        flex-direction: column;
+    }
+    .stats .item{
+        width: 60%;
+        margin: 1em auto;
+    }
+    .stats h2{
+        text-align: center;
+        font-size: 3em;
+    }
+
+    .about .content{
+        flex-direction: column-reverse;
+    }
+
+    .about .content img{
+        width: 80vw;
+        margin: 0 auto;
+    }
+
+    .about .content p{
+        width: 100%;
+        line-height: 1.2em;
+    }
+}
